@@ -12,6 +12,4 @@ if [ ! -d "$PWD"/artifacts ]; then
 fi
 
 docker pull mudler/builder-witchcraft:latest
-docker run -i --rm -v "$PWD"/artifacts:/usr/portage/packages -u $(id -u) mudler/builder-witchcraft:latest 
-witchcraft 
-pack "${@}"
+docker run -i --rm -v "$PWD"/artifacts:/usr/portage/packages -u $(id -u) mudler/builder-witchcraft:latest witchcraft pack "${@}"
