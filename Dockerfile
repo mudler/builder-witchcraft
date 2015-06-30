@@ -1,4 +1,4 @@
-FROM sabayon/builder-amd64
+FROM sabayon/builder-amd64-squashed
 
 # installing witchcraft deps
 RUN equo i sudo dev-perl/Class-Load dev-perl/Class-Load-XS dev-perl/List-MoreUtils dev-perl/DateTime-Local dev-perl/libwww-perl App-cpanminus
